@@ -1,0 +1,24 @@
+<ng-container *ngIf="data">
+  <div class="flex-row header">
+    <h2 class="title">Residents</h2>
+    <div class="filter">
+      <mat-label>Filter by</mat-label>
+      <mat-form-field appearance="outline">
+        <mat-label>
+          Gender
+        </mat-label>
+          <mat-select [(value)]="filter" >
+            <mat-option [value]="'All'">All</mat-option>
+            <mat-option *ngFor="let gender of genders | keyvalue" [value]="gender.value">{{gender.value}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+    </div>
+  </div>
+  
+  <div class="css-grid">
+    <rit-person *ngFor="let person of people"
+      [data]="person">
+    </rit-person>
+  </div>
+    
+</ng-container>

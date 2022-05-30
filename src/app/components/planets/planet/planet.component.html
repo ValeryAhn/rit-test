@@ -1,0 +1,34 @@
+<a [routerLink]="planetUrl" routerLinkActive="active">
+    <h3 class="name">{{data?.name}}</h3>
+    <ul class="planet-parameters flex-column">
+        <li>
+            <span>Diameter:</span>
+            <span>{{data?.diameter}}</span>
+        </li>
+        <li>
+            <span>Rotation Period:</span>
+            <span>{{data?.rotation_period}}</span>
+        </li>
+        <li>
+            <span>Orbital Period:</span>
+            <span>{{data?.orbital_period}}</span>
+        </li>
+        <li>
+            <span>Gravity:</span>
+            <span>{{data?.gravity}}</span>
+        </li>
+        <li>
+            <span>Climate:</span>
+            <span>{{data?.climate}}</span>
+        </li>
+        <li>
+            <span>Terrain:</span>
+            <span>{{data?.terrain}}</span>
+        </li>
+        <li>
+            <span>Surface Water:</span>
+            <span>{{data?.surface_water}}</span>
+        </li>
+    </ul>
+</a>
+

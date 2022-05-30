@@ -1,0 +1,6 @@
+<h1 class="name">Planets</h1>
+<div class="planets css-grid">
+    <rit-planet *ngFor="let planet of (planets$ | async)"
+        [data]="planet">
+    </rit-planet>
+</div>

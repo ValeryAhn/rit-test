@@ -1,0 +1,15 @@
+@import "mixins";
+:host {
+    .planet-parameters {
+        @include card-parameters;
+    }
+
+    .name {
+        margin-top: 0;
+    }
+
+    .back-link {
+        margin:  $rit-24px 0 $rit-8px;
+        display: block;
+    }
+}

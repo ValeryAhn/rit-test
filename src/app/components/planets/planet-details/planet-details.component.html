@@ -1,0 +1,42 @@
+<ng-container *ngIf="planetDetails$ | async; let planetDetails">
+    <a class="back-link" routerLink="/">&#8592;&nbsp;Back</a>
+    <h1 class="name">
+        {{planetDetails.planet.name}}
+    </h1>
+    
+    <ul class="planet-parameters flex-column">
+        <li>
+            <span>Diameter:</span>
+            <span>{{planetDetails.planet.diameter}}</span>
+        </li>
+        <li>
+            <span>Rotation Period:</span>
+            <span>{{planetDetails.planet.rotation_period}}</span>
+        </li>
+        <li>
+            <span>Orbital Period:</span>
+            <span>{{planetDetails.planet.orbital_period}}</span>
+        </li>
+        <li>
+            <span>Gravity:</span>
+            <span>{{planetDetails.planet.gravity}}</span>
+        </li>
+        <li>
+            <span>Climate:</span>
+            <span>{{planetDetails.planet.climate}}</span>
+        </li>
+        <li>
+            <span>Terrain:</span>
+            <span>{{planetDetails.planet.terrain}}</span>
+        </li>
+        <li>
+            <span>Surface Water:</span>
+            <span>{{planetDetails.planet.surface_water}}</span>
+        </li>
+    </ul>
+    <rit-people
+        [data]="planetDetails.residents">
+    </rit-people>
+</ng-container>
+
+

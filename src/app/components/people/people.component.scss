@@ -1,0 +1,26 @@
+@import "mixins";
+
+:host {
+    .title {
+        flex: none;
+        margin: 0
+    }
+
+    .filter {
+        @include flex-row;
+        align-items: center;
+        justify-content: flex-end;
+        flex: 1;
+
+        > mat-label {
+            margin-right: $rit-12px;
+        }
+    }
+
+    .header {
+        flex: 1;
+        align-items: center;
+        margin-bottom: $rit-16px;
+        margin-top: $rit-24px;
+    }
+}

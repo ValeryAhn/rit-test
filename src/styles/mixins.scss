@@ -1,0 +1,45 @@
+@import 'variables';
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin css-grid {
+    display: grid;
+    grid-column-gap: $rit-24px;
+    grid-row-gap: $rit-24px;
+}
+
+@mixin card-parameters {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+
+    > li {
+        font-size: $rit-14px;
+        @include flex-row;
+        margin-bottom: $rit-4px;
+
+        span {
+            
+            &:first-child {
+                flex: none;
+                width: $rit-100px;
+                color: $gray-2;
+                padding-right: $rit-16px;
+            }
+
+            &:last-child {
+                flex: 1;
+                @include flex-row;
+                justify-self: flex-end;
+            }
+        }
+    }
+}

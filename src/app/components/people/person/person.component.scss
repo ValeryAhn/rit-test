@@ -1,0 +1,15 @@
+@import "mixins";
+
+:host {
+    background: $gray-6;
+    border-radius: $rit-4px;
+    padding: $rit-20px;
+
+    .name {
+        margin: 0 0 $rit-16px;
+    }
+
+    .person-parameters {
+        @include card-parameters;
+    }
+}

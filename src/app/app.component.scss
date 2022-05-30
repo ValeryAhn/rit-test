@@ -1,0 +1,21 @@
+@import "mixins";
+:host {
+    .content {
+        margin: 0 auto;
+        width: 100%;
+        max-width: $rit-100px * 10;
+    }
+
+    .header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        background: $gray-6;
+
+        .title {
+            font-weight: normal;
+            font-size: $rit-20px;
+            margin: $rit-16px 0;
+        }
+    }
+}

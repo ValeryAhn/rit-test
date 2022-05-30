@@ -1,0 +1,34 @@
+<ng-container *ngIf="data">
+    <h3 class="name">{{data.name}}</h3>
+    <ul class="person-parameters flex-column">
+        <li>
+            <span>Birth Year:</span>
+            <span>{{data.birth_year}}</span>
+        </li>
+        <li>
+            <span>Eye Color:</span>
+            <span>{{data.eye_color}}</span>
+        </li>
+        <li>
+            <span>Gender:</span>
+            <span>{{data.gender}}</span>
+        </li>
+        <li>
+            <span>Hair Color:</span>
+            <span>{{data.hair_color}}</span>
+        </li>
+        <li>
+            <span>Height:</span>
+            <span>{{data.height}}</span>
+        </li>
+        <li>
+            <span>Mass:</span>
+            <span>{{data.mass}}</span>
+        </li>
+        <li>
+            <span>Skin Color:</span>
+            <span>{{data.skin_color}}</span>
+        </li>       
+    </ul>
+</ng-container>
+
