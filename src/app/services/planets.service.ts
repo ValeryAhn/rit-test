@@ -35,7 +35,7 @@ export class PlanetsService {
    * @return {*}  {Observable<Planets>}
    * @memberof PlanetsService
    */
-  private getPlanetsData(url?: string | null):Observable<Planets> {
+  private getPlanetsData(url?: string):Observable<Planets> {
     const planetsUrl = url || `${BASE_URL}/planets/`
     return this.http.get<Planets>(planetsUrl)
       .pipe(
