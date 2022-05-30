@@ -52,6 +52,13 @@ export class PeopleComponent {
     this.filter = data.value;
   }
 
+  /**
+   * Отфильтрованный список обитателей.
+   *
+   * @readonly
+   * @type {Person[]}
+   * @memberof PeopleComponent
+   */
   get people(): Person[] {
     if (this.filter === 'All' && this.data) {
       return this.data;
