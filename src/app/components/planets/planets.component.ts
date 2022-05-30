@@ -1,7 +1,8 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Planet } from 'src/app/models/planet';
 import { PlanetsService } from 'src/app/services/planets.service';
+
 
 @Component({
   selector: 'rit-planets',
