@@ -48,7 +48,6 @@ export class PeopleComponent {
    * @memberof PeopleComponent
    */
   filterSelect(data: MatSelectChange) {
-    console.warn(data)
     this.filter = data.value;
   }
 
